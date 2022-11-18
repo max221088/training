@@ -21,3 +21,56 @@ div {
   list-style: none;
   color: #000;
 }
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.wrapper .header {
+  max-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.wrapper .header .search {
+  display: flex;
+}
+.wrapper .header .search .search-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.wrapper .header .search input {
+  width: 350px;
+  max-height: 20px;
+}
+.wrapper .header .but-head {
+  display: flex;
+  justify-content: flex-end;
+}
+.wrapper .header .but-head .buttn.ring {
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.wrapper .header .but-head .buttn {
+  display: flex;
+}
+.wrapper .header .but-head img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.wrapper .header .but-head .text-buttn {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 20px;
+  cursor: pointer;
+}
+.wrapper .header .but-head .avatar {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
