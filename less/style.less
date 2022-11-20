@@ -11,61 +11,86 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
     font-weight: normal;
     list-style: none;
     color: #000;
+	text-decoration: none;
 }
 
-  .wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
-    .header {
-		max-height: 50px;
-		display: flex;
-		justify-content:space-between;
-		margin-top: 10px;
-      .search {
-		display: flex;
-        .search-icon {
-			width: 30px;
-			height: 30px;
-			cursor: pointer;
-			
-        }
-        input {
-			width: 350px;
-			max-height: 20px;
-        }
-      }
-      .but-head {
-		display: flex;
-		justify-content:flex-end;
-        .buttn.ring {
-			border-left: 1px solid #bbb;
-			border-right: 1px solid #bbb;
-			padding-left: 10px;
-			padding-right: 10px;
-			cursor: pointer;
+.wrapper {
+max-width: 1200px;
+margin: 0 auto;
+position: relative;
 
-        }
-        .buttn {
-			display: flex;
-        }
-        img {
-			width: 30px;
-			height: 30px;
-			cursor: pointer;
+	.header{
+		height: 40px;
+		padding-top: 5px;
+		display: flex;
+		justify-content: space-between;
+		position: fixed;
+		top: 0;
+		right: 0;
+
+		.search{
+			display: inline-flex;
+			margin: auto 0;
+
+			.search-icon{
+				width: 20px;
+				height: 20px;
+				margin-right: 5px;
+				
+			}
+			input{
+				height: 20px;
+				width: 400px;
+				border: none;
+				color: #888;
+
+				&:focus{
+					outline:none;
+					box-shadow: 5px 0 14px rgba(0,0,0,0.22), 0 5px 5px rgba(0,0,0,0.22);
+				}
+			}
 			
-        }
-        .text-buttn {
-			font-size: 18px;
-			color: #555;
-			margin: 5px 20px;
-			cursor: pointer;
-        }
-		.avatar {
-			border-radius: 100%;
-			width: 40px;
-			height: 40px;
-			cursor: pointer;
 		}
-      }
-    }
-  }
+		.but-head{
+			display: inline-flex;
+			justify-content: space-between;
+
+			.icon{
+				width: 20px;
+				height: 20px;
+				margin-right: 5px;
+			}
+			.ring{
+				padding-left: 10px;
+				padding-right: 5px;
+				border-left: 1px solid #888;
+				border-right: 1px solid #888;
+			}
+			.text-buttn{
+				line-height: 1.8;
+				color: #888;
+			}
+			.buttn{
+				display: inline-flex;
+				margin: auto 10px;
+
+				.caret{
+					margin: auto 10px;
+				}
+				.user-name{
+					margin: auto 5px;
+					color: #888;
+
+				}
+	
+			}
+			.avatar{
+				width: 30px;
+				height: auto;
+				border-radius: 50%;
+			}
+			
+			
+		}
+	}
+}

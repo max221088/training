@@ -20,57 +20,73 @@ div {
   font-weight: normal;
   list-style: none;
   color: #000;
+  text-decoration: none;
 }
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 .wrapper .header {
-  max-height: 50px;
+  height: 40px;
+  padding-top: 5px;
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .wrapper .header .search {
-  display: flex;
+  display: inline-flex;
+  margin: auto 0;
 }
 .wrapper .header .search .search-icon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 .wrapper .header .search input {
-  width: 350px;
-  max-height: 20px;
+  height: 20px;
+  width: 400px;
+  border: none;
+  color: #888;
+}
+.wrapper .header .search input:focus {
+  outline: none;
+  box-shadow: 5px 0 14px rgba(0, 0, 0, 0.22), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 .wrapper .header .but-head {
-  display: flex;
-  justify-content: flex-end;
+  display: inline-flex;
+  justify-content: space-between;
 }
-.wrapper .header .but-head .buttn.ring {
-  border-left: 1px solid #bbb;
-  border-right: 1px solid #bbb;
+.wrapper .header .but-head .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.wrapper .header .but-head .ring {
   padding-left: 10px;
-  padding-right: 10px;
-  cursor: pointer;
-}
-.wrapper .header .but-head .buttn {
-  display: flex;
-}
-.wrapper .header .but-head img {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+  padding-right: 5px;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
 }
 .wrapper .header .but-head .text-buttn {
-  font-size: 18px;
-  color: #555;
-  margin: 5px 20px;
-  cursor: pointer;
+  line-height: 1.8;
+  color: #888;
+}
+.wrapper .header .but-head .buttn {
+  display: inline-flex;
+  margin: auto 10px;
+}
+.wrapper .header .but-head .buttn .caret {
+  margin: auto 10px;
+}
+.wrapper .header .but-head .buttn .user-name {
+  margin: auto 5px;
+  color: #888;
 }
 .wrapper .header .but-head .avatar {
-  border-radius: 100%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
 }
