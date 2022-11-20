@@ -21,6 +21,7 @@ div {
   list-style: none;
   color: #000;
   text-decoration: none;
+  box-sizing: border-box;
 }
 .wrapper {
   max-width: 1200px;
@@ -35,15 +36,17 @@ div {
   position: fixed;
   top: 0;
   right: 0;
+  left: 200px;
 }
 .wrapper .header .search {
   display: inline-flex;
-  margin: auto 0;
+  margin: auto 15px;
 }
 .wrapper .header .search .search-icon {
   width: 20px;
   height: 20px;
   margin-right: 5px;
+  cursor: pointer;
 }
 .wrapper .header .search input {
   height: 20px;
@@ -69,6 +72,7 @@ div {
   padding-right: 5px;
   border-left: 1px solid #888;
   border-right: 1px solid #888;
+  cursor: pointer;
 }
 .wrapper .header .but-head .text-buttn {
   line-height: 1.8;
@@ -80,6 +84,7 @@ div {
 }
 .wrapper .header .but-head .buttn .caret {
   margin: auto 10px;
+  cursor: pointer;
 }
 .wrapper .header .but-head .buttn .user-name {
   margin: auto 5px;
@@ -89,4 +94,68 @@ div {
   width: 30px;
   height: auto;
   border-radius: 50%;
+}
+.wrapper .menu {
+  width: 200px;
+  background-color: #5a23ad;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.wrapper .menu .menu-name {
+  background-color: #552396;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.wrapper .menu .title {
+  text-transform: uppercase;
+  position: absolute;
+  top: 11px;
+  left: 30px;
+  color: #888;
+  font-weight: bold;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.wrapper .menu .menu-bar .menu-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.wrapper .menu .menu-bar .menu-item .item {
+  display: flex;
+  margin-left: 10px;
+}
+.wrapper .menu-bar {
+  position: relative;
+  height: 100%;
+}
+.wrapper .menu-bar .menu-text {
+  color: #888;
+  font-size: 16px;
+}
+.wrapper .menu-bar .item {
+  padding: 10px;
+}
+.wrapper .menu-bar .menu-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.wrapper .menu-bar .setting-menu {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+}
+.wrapper .menu-bar .setting-menu .setting {
+  display: flex;
+}
+.wrapper .menu-bar .setting-menu .setting:last-child {
+  border-top: 1px solid rgba(91, 91, 94, 0.849);
+  cursor: pointer;
 }
