@@ -97,14 +97,14 @@ div {
 }
 .wrapper .menu {
   width: 200px;
-  background-color: #5a23ad;
+  background-color: #43425d;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
 }
 .wrapper .menu .menu-name {
-  background-color: #552396;
+  background-color: #3b3b53;
   width: 100%;
   height: 50px;
   position: relative;
@@ -114,7 +114,7 @@ div {
   position: absolute;
   top: 11px;
   left: 30px;
-  color: #888;
+  color: #e8e8eb;
   font-weight: bold;
   line-height: 1.8;
   font-size: 18px;
@@ -129,33 +129,33 @@ div {
   display: flex;
   margin-left: 10px;
 }
-.wrapper .menu-bar {
+.wrapper .menu .menu-bar {
   position: relative;
   height: 100%;
 }
-.wrapper .menu-bar .menu-text {
-  color: #888;
+.wrapper .menu .menu-bar .menu-text {
+  color: #e8e8eb;
   font-size: 16px;
 }
-.wrapper .menu-bar .item {
+.wrapper .menu .menu-bar .item {
   padding: 10px;
 }
-.wrapper .menu-bar .menu-item {
+.wrapper .menu .menu-bar .menu-item {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-.wrapper .menu-bar .setting-menu {
+.wrapper .menu .menu-bar .setting-menu {
   position: absolute;
   bottom: 60px;
   left: 0;
   width: 100%;
 }
-.wrapper .menu-bar .setting-menu .setting {
+.wrapper .menu .menu-bar .setting-menu .setting {
   display: flex;
 }
-.wrapper .menu-bar .setting-menu .setting:last-child {
+.wrapper .menu .menu-bar .setting-menu .setting:last-child {
   border-top: 1px solid rgba(91, 91, 94, 0.849);
   cursor: pointer;
 }
