@@ -99,6 +99,10 @@ div {
 .wrapper .header .but-head .ring {
   position: relative;
 }
+.wrapper .header .but-head .ring.active .drop-menu {
+  opacity: 1;
+  visibility: visible;
+}
 .wrapper .header .but-head .drop-menu {
   position: absolute;
   top: 33px;
@@ -110,10 +114,6 @@ div {
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
-}
-.wrapper .header .but-head .drop-menu.active {
-  opacity: 1;
-  visibility: visible;
 }
 .wrapper .header .but-head .drop-menu .drop-tittle {
   margin-top: 5px;

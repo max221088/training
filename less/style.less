@@ -95,6 +95,14 @@ left: 200px;
 			}
 			.ring{
 				position: relative;
+
+				&.active{
+					.drop-menu{
+						opacity: 1;
+						visibility: visible;
+					}
+					
+				}
 			}
 			.drop-menu{
 				position: absolute;
@@ -108,10 +116,7 @@ left: 200px;
 				visibility: hidden;
 				transition: 0.5s;
 
-				&.active{
-					opacity: 1;
-					visibility: visible;
-				}
+				
 
 				.drop-tittle{
 					margin-top: 5px;
