@@ -3,8 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-html body,
-body body {
+body {
   background: linear-gradient(#d5d5eb, #fff) fixed;
 }
 h1,
