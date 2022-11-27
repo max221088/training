@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 }
 
 .wrapper {
-	width: 1200px;
+	max-width: 1200px;
 	position: absolute;
 	top: 50px;
 	left: 200px;
@@ -187,21 +187,17 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 			line-height: 1.8;
 			font-size: 18px;
 		}
-		.menu-bar{
+		.menu-icon{
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			cursor: pointer;
+		}
 
-			.menu-icon{
-				width: 20px;
-				height: 20px;
-				margin-right: 10px;
-				cursor: pointer;
-			}
+		.menu-item{
 
-			.menu-item{
-
-				.item{
-					display: flex;
-					margin-left: 10px;
-				}
+			.item{
+				display: flex;
 			}
 		}
 		.menu-bar{
@@ -244,9 +240,10 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 	margin-right: auto;
 
 		.tittle{
-			text-transform: uppercase;
+			text-transform: capitalize;
 			color: #43425d;
-			font-size: 18px;
+			font-size: 28px;
+			font-weight: bold;
 			margin-top: 20px;
 			margin-bottom: 20px;
 			margin-left: auto;

@@ -27,7 +27,7 @@ div {
   box-sizing: border-box;
 }
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
   position: absolute;
   top: 50px;
   left: 200px;
@@ -180,15 +180,14 @@ div {
   line-height: 1.8;
   font-size: 18px;
 }
-.wrapper .menu .menu-bar .menu-icon {
+.wrapper .menu .menu-icon {
   width: 20px;
   height: 20px;
   margin-right: 10px;
   cursor: pointer;
 }
-.wrapper .menu .menu-bar .menu-item .item {
+.wrapper .menu .menu-item .item {
   display: flex;
-  margin-left: 10px;
 }
 .wrapper .menu .menu-bar {
   position: relative;
@@ -226,9 +225,10 @@ div {
   margin-right: auto;
 }
 .wrapper .content .tittle {
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #43425d;
-  font-size: 18px;
+  font-size: 28px;
+  font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: auto;
