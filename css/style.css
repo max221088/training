@@ -219,6 +219,47 @@ div {
   border-top: 1px solid rgba(91, 91, 94, 0.849);
   cursor: pointer;
 }
+.wrapper .menu .collapse {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+.wrapper .menu .collapse .coll-menu {
+  display: list-item;
+}
+.wrapper .menu .collapse .coll-menu .item {
+  padding: 10px;
+  height: 40px;
+}
+.wrapper .menu .collapse .coll-menu .menu-name-coll {
+  background-color: #3b3b53;
+  height: 50px;
+}
+.wrapper .menu .collapse .coll-menu .line {
+  width: 20px;
+  height: 5px;
+  background-color: #777;
+  margin-bottom: 5px;
+  border-radius: 2px;
+}
+.wrapper .menu .collapse .coll-setting-menu {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+}
+.wrapper .menu .collapse .coll-setting-menu .coll-setting-item {
+  padding: 10px;
+  height: 40px;
+}
+.wrapper .menu .collapse .coll-setting-menu .coll-setting-item:last-child {
+  border-top: 1px solid rgba(91, 91, 94, 0.849);
+  cursor: pointer;
+}
 .wrapper .content {
   width: 80%;
   margin-left: auto;
