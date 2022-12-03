@@ -23,7 +23,12 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 	position: absolute;
 	top: 50px;
 	left: 200px;
+	transition: 0.5s;
 
+	&.wrap{
+		left: 50px;
+		max-width: 100%;
+	}
 	.header{
 		height: 45px;
 		padding-top: 5px;
@@ -34,7 +39,11 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 		top: 0;
 		right: 0;
 		left: 200px;
+		transition: 0.5s;
 
+		&.wrap{
+			left: 50px;
+		}
 		.search{
 			display: inline-flex;
 			margin: auto 15px;
@@ -170,14 +179,30 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 		top: 0;
 		left: 0;
 		bottom: 0;
+		transition: 0.5s;
 
+		&.minimize{
+			width: 50px;
+		}
 		.menu-name{
 			background-color: #3b3b53;
 			width: 100%;
 			height: 50px;
 			position: relative;
-			// visibility: hidden;
-			// opacity: 0;
+			display: flex;
+			
+			.logo-brand{
+				visibility: hidden;
+				opacity: 0;
+				margin-top: 15px;
+				margin-left: 10px;
+				transition: 0.5s;
+
+				&.active{
+					visibility: visible;
+					opacity: 1;
+				}
+			}
 		}
 		.title{
 			text-transform: uppercase;
@@ -188,6 +213,10 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 			font-weight: bold;
 			line-height: 1.8;
 			font-size: 18px;
+
+			&.hidden{
+				display: none;
+			}
 		}
 		.menu-icon{
 			width: 20px;
@@ -204,12 +233,17 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 		.menu-bar{
 			position: relative;
 			height: 100%;
-			// visibility: hidden;
-			// opacity: 0;
 	
 			.menu-text{
 				color: #e8e8eb;
 				font-size: 16px;
+				transition: 0.5s;
+				height: 0px;
+
+				&.hidden{
+					display: none;
+					opacity: 0;
+				}
 			}
 			.item{
 				padding: 10px;
@@ -219,13 +253,14 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 				top: 0;
 				left: 0;
 				width: 100%;
+
 			}
 			.setting-menu{
 				position: absolute;
 				bottom: 60px;
 				left: 0;
 				width: 100%;
-				
+
 				.setting{
 					display: flex;
 					
@@ -236,51 +271,56 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 				}
 			}
 		}
-		.collapse{
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 50px;
-			height: 100%;
-			visibility: hidden;
-			opacity: 0;
+		// .collapse{
+		// 	position: fixed;
+		// 	top: 0;
+		// 	left: 0;
+		// 	width: 50px;
+		// 	height: 100%;
+		// 	visibility: hidden;
+		// 	opacity: 0;
+		// 	transition: 0.5s;
 
-			.coll-menu{
-				display: list-item;
+		// 	&.active{
+		// 		visibility: visible;
+		// 		opacity: 1;
+		// 	}
+		// 	.coll-menu{
+		// 		display: list-item;
 
-				.item{
-					padding: 10px;
-					height: 40px;
-				}
-				.menu-name-coll{
-					background-color: #3b3b53;
-					height: 50px;
-				}
-				.line{
-					width: 20px;
-					height: 5px;
-					background-color: #777;
-					margin-bottom: 5px;
-					border-radius: 2px;
-				}
-			}
-			.coll-setting-menu{
-				position: absolute;
-				bottom: 11px;
-				left: 0;
-				width: 100%;
+		// 		.item{
+		// 			padding: 10px;
+		// 			height: 40px;
+		// 		}
+		// 		.menu-name-coll{
+		// 			background-color: #3b3b53;
+		// 			height: 50px;
+		// 		}
+		// 		.line{
+		// 			width: 20px;
+		// 			height: 5px;
+		// 			background-color: #777;
+		// 			margin-bottom: 5px;
+		// 			border-radius: 2px;
+		// 		}
+		// 	}
+		// 	.coll-setting-menu{
+		// 		position: absolute;
+		// 		bottom: 11px;
+		// 		left: 0;
+		// 		width: 100%;
 
-				.coll-setting-item{
-					padding: 10px;
-					height: 40px;
+		// 		.coll-setting-item{
+		// 			padding: 10px;
+		// 			height: 40px;
 
-					&:last-child{
-						border-top: 1px solid rgba(91, 91, 94, 0.849);
-						cursor: pointer;
-					}
-				}
-			}
-		}
+		// 			&:last-child{
+		// 				border-top: 1px solid rgba(91, 91, 94, 0.849);
+		// 				cursor: pointer;
+		// 			}
+		// 		}
+		// 	}
+		//}
 	}
 	.content {
 	width: 80%;

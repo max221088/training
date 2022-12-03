@@ -31,6 +31,11 @@ div {
   position: absolute;
   top: 50px;
   left: 200px;
+  transition: 0.5s;
+}
+.wrapper.wrap {
+  left: 50px;
+  max-width: 100%;
 }
 .wrapper .header {
   height: 45px;
@@ -42,6 +47,10 @@ div {
   top: 0;
   right: 0;
   left: 200px;
+  transition: 0.5s;
+}
+.wrapper .header.wrap {
+  left: 50px;
 }
 .wrapper .header .search {
   display: inline-flex;
@@ -163,12 +172,28 @@ div {
   top: 0;
   left: 0;
   bottom: 0;
+  transition: 0.5s;
+}
+.wrapper .menu.minimize {
+  width: 50px;
 }
 .wrapper .menu .menu-name {
   background-color: #3b3b53;
   width: 100%;
   height: 50px;
   position: relative;
+  display: flex;
+}
+.wrapper .menu .menu-name .logo-brand {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 15px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+.wrapper .menu .menu-name .logo-brand.active {
+  visibility: visible;
+  opacity: 1;
 }
 .wrapper .menu .title {
   text-transform: uppercase;
@@ -179,6 +204,9 @@ div {
   font-weight: bold;
   line-height: 1.8;
   font-size: 18px;
+}
+.wrapper .menu .title.hidden {
+  display: none;
 }
 .wrapper .menu .menu-icon {
   width: 20px;
@@ -196,6 +224,12 @@ div {
 .wrapper .menu .menu-bar .menu-text {
   color: #e8e8eb;
   font-size: 16px;
+  transition: 0.5s;
+  height: 0px;
+}
+.wrapper .menu .menu-bar .menu-text.hidden {
+  display: none;
+  opacity: 0;
 }
 .wrapper .menu .menu-bar .item {
   padding: 10px;
@@ -216,47 +250,6 @@ div {
   display: flex;
 }
 .wrapper .menu .menu-bar .setting-menu .setting:last-child {
-  border-top: 1px solid rgba(91, 91, 94, 0.849);
-  cursor: pointer;
-}
-.wrapper .menu .collapse {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  visibility: hidden;
-  opacity: 0;
-}
-.wrapper .menu .collapse .coll-menu {
-  display: list-item;
-}
-.wrapper .menu .collapse .coll-menu .item {
-  padding: 10px;
-  height: 40px;
-}
-.wrapper .menu .collapse .coll-menu .menu-name-coll {
-  background-color: #3b3b53;
-  height: 50px;
-}
-.wrapper .menu .collapse .coll-menu .line {
-  width: 20px;
-  height: 5px;
-  background-color: #777;
-  margin-bottom: 5px;
-  border-radius: 2px;
-}
-.wrapper .menu .collapse .coll-setting-menu {
-  position: absolute;
-  bottom: 11px;
-  left: 0;
-  width: 100%;
-}
-.wrapper .menu .collapse .coll-setting-menu .coll-setting-item {
-  padding: 10px;
-  height: 40px;
-}
-.wrapper .menu .collapse .coll-setting-menu .coll-setting-item:last-child {
   border-top: 1px solid rgba(91, 91, 94, 0.849);
   cursor: pointer;
 }

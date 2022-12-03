@@ -1,3 +1,5 @@
+const collapse = document.querySelector('#collapse');
+console.log(collapse);
 document.querySelector('.ring').addEventListener("click", function () {
 	this.classList.toggle('active');
 });
@@ -16,4 +18,15 @@ fetch('https://pokeapi.co/api/v2/pokemon/')
 })
 .then(function (data){
     namePokemon(data)
+});
+
+collapse.addEventListener('click' , function(){
+	document.querySelectorAll('.menu-text').forEach(function(el){
+		el.classList.toggle('hidden')
+	});
+	document.querySelector('.header').classList.toggle('wrap');
+	document.querySelector('.wrapper').classList.toggle('wrap');
+	document.querySelector('.brand').classList.toggle('hidden');
+	document.querySelector('.logo-brand').classList.toggle('active');
+	document.querySelector('.menu').classList.toggle('minimize');
 });
