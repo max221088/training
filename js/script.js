@@ -1,4 +1,4 @@
-const $filt = document.querySelector('.filter');
+const $filt = document.querySelector('.filt');
 let pokemon = [];
 //console.log($filt);
 
@@ -8,10 +8,13 @@ document.querySelector('.ring').addEventListener("click", function () {
 
 function namePokemon (list){
     let tableItems = '';
-    list.forEach(function (el) {
-        tableItems += "<tr> <td>"+el.name+"</td><td>"+el.url+"</td></tr>";
-    });
-    document.querySelector('tbody').insertAdjacentHTML('beforeend', tableItems);
+	if (list.length != 0) {
+		list.forEach(function (el) {
+			tableItems += "<tr> <td>"+el.name+"</td><td>"+el.url+"</td></tr>"});
+	} else { 
+		tableItems = "<tr><td>Not Font</td><td>Not Font</td></tr>"
+	}
+	document.querySelector('tbody').innerHTML = tableItems
 };
 
 fetch('https://pokeapi.co/api/v2/pokemon/')
@@ -32,7 +35,6 @@ $filt.addEventListener('input', function (){
 		} else {
 			return false;
 		};
-	});
-	console.log(filtPokemon);
+	})
 	namePokemon(filtPokemon);
 });
