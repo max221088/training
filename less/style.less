@@ -1,20 +1,30 @@
 // out: ../css/style.css
 
-html, body {
-    margin: 0;
-    padding: 0;
-
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 body {
 	background: linear-gradient(#d5d5eb, #fff) fixed;
 }
-h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-weight: normal;
-    list-style: none;
-    color: #000;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a,
+p,
+div {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: normal;
+	list-style: none;
+	color: #000;
 	text-decoration: none;
 	box-sizing: border-box;
 }
@@ -25,11 +35,11 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 	left: 200px;
 	transition: 0.5s;
 
-	&.wrap{
+	&.wrap {
 		left: 50px;
 		max-width: 100%;
 	}
-	.header{
+	.header {
 		height: 45px;
 		padding-top: 5px;
 		display: flex;
@@ -41,82 +51,81 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 		left: 200px;
 		transition: 0.5s;
 
-		&.wrap{
+		&.wrap {
 			left: 50px;
 		}
-		.search{
+		.search {
 			display: inline-flex;
 			margin: auto 15px;
 
-			.search-icon{
+			.search-icon {
 				width: 20px;
 				height: 20px;
 				margin-right: 5px;
 				cursor: pointer;
 			}
-			input{
+			input {
 				height: 20px;
 				width: 400px;
 				border: none;
 				color: #888;
 
-				&:focus{
-					outline:none;
-					box-shadow: 5px 0 14px rgba(0,0,0,0.22), 0 5px 5px rgba(0,0,0,0.22);
+				&:focus {
+					outline: none;
+					box-shadow: 5px 0 14px rgba(0, 0, 0, 0.22),
+						0 5px 5px rgba(0, 0, 0, 0.22);
 				}
 			}
-			
 		}
-		.but-head{
+		.but-head {
 			display: inline-flex;
 			justify-content: space-between;
 
-			.icon{
+			.icon {
 				width: 20px;
 				height: 20px;
 				margin-right: 5px;
 			}
-			.ring{
+			.ring {
 				padding-left: 10px;
 				padding-right: 5px;
 				border-left: 1px solid #888;
 				border-right: 1px solid #888;
 				cursor: pointer;
 			}
-			.text-buttn{
+			.text-buttn {
 				line-height: 1.8;
 				color: #888;
 			}
-			.buttn{
+			.buttn {
 				display: inline-flex;
 				margin: auto 10px;
 
-				.caret{
+				.caret {
 					margin: auto 10px;
 					cursor: pointer;
 				}
-				.user-name{
+				.user-name {
 					margin: auto 5px;
 					color: #888;
 				}
 			}
-			.ring{
+			.ring {
 				position: relative;
 
-				&.active{
-
-					.drop-menu{
+				&.active {
+					.drop-menu {
 						opacity: 1;
 						visibility: visible;
 					}
-					
 				}
 			}
-			.drop-menu{
+			.drop-menu {
 				position: absolute;
 				top: 33px;
 				left: -280px;
-				box-shadow: 5px 0 14px rgba(0,0,0,0.22), 0 5px 5px rgba(0,0,0,0.22);
+				box-shadow: 5px 0 14px rgba(0, 0, 0, 0.22),
+					0 5px 5px rgba(0, 0, 0, 0.22);
 				width: max-content;
 				background-color: #fff;
 				padding: 30px 50px;
@@ -124,7 +133,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 				visibility: hidden;
 				transition: 0.5s;
 
-				.drop-tittle{
+				.drop-tittle {
 					margin-top: 5px;
 					padding-bottom: 10px;
 					font-size: 16px;
@@ -132,47 +141,46 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 					border-bottom: 1px solid #999;
 					text-transform: capitalize;
 				}
-				.drop-link{
+				.drop-link {
 					color: rgb(12, 12, 170);
 					text-align: center;
 					padding-top: 20px;
 					font-size: 12px;
 					display: block;
 				}
-				.item{
+				.item {
 					display: flex;
 					border-bottom: 1px solid #999;
 					padding: 10px 3px;
 
-					.item-avatar{
+					.item-avatar {
 						width: 40px;
 						height: auto;
 						border-radius: 100%;
 						margin-right: 5px;
 					}
-					.incom-mess{
+					.incom-mess {
 						color: #777;
 						font-size: 12px;
 
-						.name{
+						.name {
 							font-weight: bold;
 						}
 					}
-					.mess-time{
+					.mess-time {
 						font-size: 12px;
 						color: #777;
 					}
-					
 				}
 			}
-			.avatar{
+			.avatar {
 				width: 30px;
 				height: auto;
 				border-radius: 50%;
 			}
 		}
 	}
-	.menu{
+	.menu {
 		width: 200px;
 		background-color: #43425d;
 		position: fixed;
@@ -181,30 +189,30 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 		bottom: 0;
 		transition: 0.5s;
 
-		&.minimize{
+		&.minimize {
 			width: 50px;
 		}
-		.menu-name{
+		.menu-name {
 			background-color: #3b3b53;
 			width: 100%;
 			height: 50px;
 			position: relative;
 			display: flex;
-			
-			.logo-brand{
+
+			.logo-brand {
 				visibility: hidden;
 				opacity: 0;
 				margin-top: 15px;
 				margin-left: 10px;
 				transition: 0.5s;
 
-				&.active{
+				&.active {
 					visibility: visible;
 					opacity: 1;
 				}
 			}
 		}
-		.title{
+		.title {
 			text-transform: uppercase;
 			position: absolute;
 			top: 11px;
@@ -214,69 +222,68 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 			line-height: 1.8;
 			font-size: 18px;
 
-			&.hidden{
+			&.hidden {
 				display: none;
 			}
 		}
-		.menu-icon{
+		.menu-icon {
 			width: 20px;
 			height: 20px;
 			margin-right: 10px;
 			cursor: pointer;
 		}
-		.menu-item{
-
-			.item{
+		.menu-item {
+			.item {
 				display: flex;
 			}
 		}
-		.menu-bar{
+		.menu-bar {
 			position: relative;
 			height: 100%;
-	
-			.menu-text{
+
+			.menu-text {
 				color: #e8e8eb;
 				font-size: 16px;
 				transition: 0.5s;
 				height: 0px;
 
-				&.hidden{
+				&.hidden {
 					display: none;
 					opacity: 0;
 				}
 			}
-			.item{
+			.item {
 				padding: 10px;
 			}
-			.menu-item{
+			.menu-item {
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 100%;
 			}
-			.setting-menu{
+			.setting-menu {
 				position: absolute;
 				bottom: 60px;
 				left: 0;
 				width: 100%;
 
-				.setting{
+				.setting {
 					display: flex;
-					
-					&:last-child{
-					border-top: 1px solid rgba(91, 91, 94, 0.849);
-					cursor: pointer;
+
+					&:last-child {
+						border-top: 1px solid rgba(91, 91, 94, 0.849);
+						cursor: pointer;
 					}
 				}
 			}
 		}
 	}
 	.content {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
 
-		.tittle{
+		.tittle {
 			text-transform: capitalize;
 			color: #43425d;
 			font-size: 28px;
@@ -286,21 +293,21 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 			margin-left: auto;
 			margin-right: auto;
 		}
-		.table{
+		.table {
 			padding: 15px;
 			background-color: #fff;
-			width: 100% ;
+			width: 100%;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
 
-			.table-tittle{
+			.table-tittle {
 				text-transform: capitalize;
 				color: #888;
 				margin-top: 15px;
 				font-size: 20px;
 			}
-			.referrer{
+			.referrer {
 				background-color: #fff;
 				border-spacing: 0px;
 				text-align: center;
@@ -308,23 +315,23 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p, div {
 				width: 100%;
 				height: auto;
 				margin-top: 15px;
-					
-					tr{
+
+				tr {
 					font-size: 16px;
 					line-height: 1.8;
 					color: #777;
-					}
-					td{
-						border-bottom: 1px solid #f5f6fa;
-					}
-					th{
-						font-size: 18px;
-						color: #9c9ea8;
-						text-transform: uppercase;
-						background-color: #f5f6fa;
-					}
 				}
-			.table-link{
+				td {
+					border-bottom: 1px solid #f5f6fa;
+				}
+				th {
+					font-size: 18px;
+					color: #9c9ea8;
+					text-transform: uppercase;
+					background-color: #f5f6fa;
+				}
+			}
+			.table-link {
 				display: block;
 				margin-top: 10px;
 				text-transform: capitalize;
