@@ -338,6 +338,42 @@ div {
 				color: rgb(12, 12, 170);
 				font-size: 16px;
 			}
+			.modal-container{
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				opacity: 0;
+				visibility: hidden;
+				
+				&.active{
+					visibility: visible;
+					opacity: 1;
+				}
+				.overlay{
+					position: fixed;
+					z-index: 100;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: #000;
+					opacity: 0.5;
+					
+					.modal{
+						position: relative;
+						z-index: 101;
+						margin: 50px auto;
+						width: 600px;
+						height: 400px;
+						border: 1px solid rgb(0, 0, 0);
+						border-radius: 3px;
+						background-color: rgb(236, 229, 229);
+						
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,12 +1,22 @@
 const $filt = document.querySelector(".filt");
 let pokemon = [];
 //console.log($filt);
-const collapse = document.querySelector("#collapse");
-//console.log(collapse);
+const $collapse = document.querySelector("#collapse");
+const $table = document.querySelector("table");
+const $modal = document.querySelector(".modal-container");
+console.log(document.querySelector(".overlay"));
 
 document.querySelector(".ring").addEventListener("click", function () {
 	this.classList.toggle("active");
 });
+
+function openModal(data) {
+	if (data == open) {
+		$modal.classList.add("active");
+	} else if (data == close) {
+		$modal.classList.remove("active");
+	}
+}
 
 function namePokemon(list) {
 	let tableItems = "";
@@ -28,7 +38,6 @@ fetch("https://pokeapi.co/api/v2/pokemon/")
 	.then(function (data) {
 		pokemon = data.results;
 		namePokemon(pokemon);
-		//console.log(pokemon);
 	});
 
 $filt.addEventListener("input", function () {
@@ -43,7 +52,7 @@ $filt.addEventListener("input", function () {
 	namePokemon(filtPokemon);
 });
 
-collapse.addEventListener("click", function () {
+$collapse.addEventListener("click", function () {
 	document.querySelectorAll(".menu-text").forEach(function (el) {
 		el.classList.toggle("hidden");
 	});
@@ -52,4 +61,11 @@ collapse.addEventListener("click", function () {
 	document.querySelector(".brand").classList.toggle("hidden");
 	document.querySelector(".logo-brand").classList.toggle("active");
 	document.querySelector(".menu").classList.toggle("minimize");
+});
+
+$table.addEventListener("click", function () {
+	openModal(open);
+});
+document.querySelector(".overlay").addEventListener("click", function () {
+	openModal(close);
 });
