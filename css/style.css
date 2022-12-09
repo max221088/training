@@ -305,6 +305,14 @@ div {
   text-transform: uppercase;
   background-color: #f5f6fa;
 }
+.wrapper .content .table .referrer .pokemon-link {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.wrapper .content .table .referrer .pokemon-link:hover {
+  background-color: #888;
+  color: #f53434;
+}
 .wrapper .content .table .table-link {
   display: block;
   margin-top: 10px;
@@ -342,6 +350,32 @@ div {
   width: 600px;
   height: 400px;
   border: 1px solid #000000;
-  border-radius: 3px;
+  border-radius: 10px;
   background-color: #ece5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+.wrapper .content .table .modal-container .overlay .modal .modal-tittle {
+  text-transform: capitalize;
+  font-size: 24px;
+  text-align: center;
+  color: #063ca0;
+}
+.wrapper .content .table .modal-container .overlay .modal .front-default {
+  margin-top: 20px;
+  flex: 1 1 auto;
+}
+.wrapper .content .table .modal-container .overlay .modal .front-default img {
+  width: 200px;
+  height: auto;
+}
+.wrapper .content .table .modal-container .overlay .modal .foot-bar {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.wrapper .content .table .modal-container .overlay .modal .foot-bar img {
+  flex: 1 1 100px;
 }
